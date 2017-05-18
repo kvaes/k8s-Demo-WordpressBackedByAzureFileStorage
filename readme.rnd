@@ -1,0 +1,4 @@
+kubectl create -f azure-secret.yaml
+kubectl create -f mysql-secret.yaml
+kubectl create -f wordpress-service.yaml
+kubectl get svc
