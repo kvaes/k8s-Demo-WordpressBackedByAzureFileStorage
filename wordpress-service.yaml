@@ -59,8 +59,10 @@ spec:
       - image: wordpress:4.7.3-apache
         name: wordpress
         env:
+        - name: WORDPRESS_DB_USER
+          value: my-user-name
         - name: WORDPRESS_DB_HOST
-          value: bc17.mysql.database.azure.com
+          value: my-host-name
         - name: WORDPRESS_DB_PASSWORD
           valueFrom:
             secretKeyRef:
